@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonProps } from './Button.types';
+import { ButtonClassicProps } from './ButtonClassic.types';
 
 // export interface ButtonProps {
 //   size?: "small" | "medium" | "large"
@@ -31,7 +31,7 @@ const buttonSizes = {
 };
 
 
-const Button = (props : ButtonProps) => {
+const ButtonClassic = (props : ButtonClassicProps) => {
   const { children, size = 'medium', ...rest } = props;
   const buttonStyles = {
     ...rest.style,
@@ -46,4 +46,4 @@ const Button = (props : ButtonProps) => {
   )
 }
 
-export default Button
+export default ButtonClassic

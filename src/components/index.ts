@@ -1,7 +1,15 @@
-export * from "./Button/Button.types";
-export { default as Button } from './Button'
+export * from "./ButtonClassic/ButtonClassic.types";
+export { default as ButtonClassic } from './ButtonClassic'
 export { default as MyButton } from './MyButton'
 export { Input, InputProps } from './inputs/index'
 export { Counter, CounterProps } from './inputs/index'
 export { CategoryInput, CategoryBoxProps} from './inputs/index'
 export { DatePicker, DatePickerProps} from './inputs/index'
+export { default as Button, ButtonProps } from './Button'
+export { default as ClientOnly, ClientOnlyProps } from './ClientOnly'
+export { default as Container, ContainerProps } from './Container'
+export { default as Heading, HeadingProps } from './Heading'
+export { default as Loader } from './Loader'
+export { ListingCategory, CategoryViewProps } from './listings/index'
+export { ListingReservation, ListingReservationProps } from './listings/index'
+export { Modal, ModalProps } from './modals/index'
