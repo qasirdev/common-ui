@@ -6,6 +6,7 @@ import dts from 'rollup-plugin-dts'
 //NEW
 import terser from '@rollup/plugin-terser'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
+import postcss from 'rollup-plugin-postcss';
 
 const packageJson = require('./package.json')
 
@@ -29,6 +30,17 @@ export default [
 
       // NEW
       terser(),
+
+      postcss({
+        // PostCSS plugins and options
+        extract: true, // Extract CSS to separate file
+        minimize: true, // Minify CSS
+        // Add any PostCSS plugins here
+        plugins: [
+          // Example: Autoprefixer
+          require('autoprefixer'),
+        ],
+      }),
     ],
   },
   {
