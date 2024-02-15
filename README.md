@@ -1,3 +1,13 @@
+# Separation of concerns
+Original repo: https://github.com/qasirdev/next14-prisma-property
+
+After refactor and separate an application into units
+
+- common-ui: https://github.com/qasirdev/common-ui
+- property-backend-next: https://github.com/qasirdev/property-backend-next
+- property-frontend-next: https://github.com/qasirdev/property-frontend-next
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
