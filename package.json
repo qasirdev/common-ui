@@ -76,7 +76,9 @@
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.36.0",
     "tailwindcss": "^3.4.1",
-    "tslib": "^2.6.2"
+    "tslib": "^2.6.2",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
   },
   "peerDependencies": {
     "react": "^18.0.0"
