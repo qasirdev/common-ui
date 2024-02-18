@@ -29,5 +29,5 @@ jobs:
          
       - name: clean & build & prod & publish
         run: |
-          run: npm run clean:build:prod
+          npm run clean:build:prod
           npm publish
