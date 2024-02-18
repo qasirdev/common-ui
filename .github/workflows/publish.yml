@@ -27,10 +27,7 @@ jobs:
         env:
           GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
          
-      - name: Install deps
-        run: npm ci
-
-      - name: Build & publish
+      - name: clean & build & prod & publish
         run: |
-          npm run build
+          run: npm run clean:build:prod
           npm publish
