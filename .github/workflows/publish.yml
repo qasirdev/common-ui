@@ -23,9 +23,9 @@ jobs:
       - name: setup .npmrc
         run: |
           echo "@qasirdev:registry=https://npm.pkg.github.com/" >> .npmrc
-          echo "//npm.pkg.github.com/:_authToken=$GITHUB_PAT" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=$GPR_TOKEN" >> .npmrc
         env:
-          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+          GPR_TOKEN: ${{ secrets.GPR_TOKEN }}
       
       - name: View generated .npmrc 
         run: cat .npmrc   # <-- Added logging step
