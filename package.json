@@ -32,7 +32,8 @@
     "clean": "sudo rm -r node_modules dist package-lock.json",
     "i": "npm install",
     "build": "rollup -c --bundleConfigAsCjs",
-    "clean:build": "npm run clean && npm run i && npm run build"
+    "clean:build": "npm run clean && npm run i && npm run build",
+    "clean:build:prod": "npm run clean && npm run i && webpack --mode production"
   },
   "author": "Qas-Dev",
   "license": "MIT",
