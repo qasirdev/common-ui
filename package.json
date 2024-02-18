@@ -29,7 +29,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "clean": "sudo rm -r node_modules dist package-lock.json",
+    "clean": "sudo rm -rf node_modules dist package-lock.json",
     "i": "npm install",
     "build": "rollup -c --bundleConfigAsCjs",
     "clean:build": "npm run clean && npm run i && npm run build",
