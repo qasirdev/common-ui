@@ -26,8 +26,8 @@ jobs:
           echo "//npm.pkg.github.com/:_authToken=$GITHUB_PAT" >> .npmrc
         env:
           GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-         
-      - name: clean & build & prod & publish
-        run: |
-          npm run clean:build:prod
-          npm publish
+      
+      - name: clean install and build
+        run: npm run clean:build
+      - name: publish
+        run: npm publish
